@@ -1,6 +1,5 @@
-// const { Ship } = require("./Ship");
-const { Port } = require("./Port");
-const { Itinerary } = require("./Itinerary");
+const { Port } = require("../src/Port");
+const { Itinerary } = require("../src/Itinerary");
 
 describe("Itinerary", () => {
   it("should contain objects of ports", () => {

@@ -1,6 +1,6 @@
-const { Ship } = require("./Ship");
-const { Port } = require("./Port");
-const { Itinerary } = require("./Itinerary");
+const { Ship } = require("../src/Ship");
+const { Port } = require("../src/Port");
+const { Itinerary } = require("../src/Itinerary");
 
 describe("Ship", () => {
   describe("with ports and itinerary", () => {

@@ -1,4 +1,4 @@
-const { Port } = require("./Port");
+const { Port } = require("../src/Port");
 
 describe("Port", () => {
   it("has a name", () => {
