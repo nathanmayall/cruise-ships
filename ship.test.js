@@ -1,16 +1,19 @@
 const { Ship } = require("./Ship");
+const { Port } = require("./Port");
 
 describe("Ship", () => {
   it("should have a starting port", () => {
-    const nathShip = new Ship("Portsmouth");
-    const expected = "Portsmouth";
+    const nathPort = new Port("Portsmouth");
+    const nathShip = new Ship(nathPort);
+    const expected = { name: "Portsmouth" };
     const result = nathShip.currentPort;
 
     expect(result).toEqual(expected);
   });
   it("defaults to Portsmouth if no port supplied", () => {
-    const nathShip = new Ship();
-    const expected = "Portsmouth";
+    const nathPort = new Port();
+    const nathShip = new Ship(nathPort);
+    const expected = { name: "Portsmouth" };
     const result = nathShip.currentPort;
 
     expect(result).toEqual(expected);
@@ -29,7 +32,7 @@ describe("Ship", () => {
 
     expect(result).toEqual(expected);
   });
-  it("setSail moves to specified port", () => {
+  it("setSail moves ship to specified port", () => {
     const nathShip = new Ship("Portsmouth");
     nathShip.setSail("Southampton");
     const expected = "Southampton";

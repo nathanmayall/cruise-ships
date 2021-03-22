@@ -1,8 +1,11 @@
+const Port = require("./Port");
+
 class Ship {
   constructor(port) {
-    this.currentPort = port || "Portsmouth";
+    this.originPort = port || new Port("Portsmouth");
     this.passengers = 0;
     this.journey = [];
+    this.currentPort = port || new Port("Portsmouth");
   }
   setSail(newPort) {
     this.currentPort = newPort;
