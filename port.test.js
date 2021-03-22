@@ -2,8 +2,16 @@ const { Port } = require("./Port");
 
 describe("Port", () => {
   it("has a name", () => {
-    const newPort = new Port("Dover");
+    const port = new Port("Dover");
 
-    expect(newPort.name).toBe("Dover");
+    expect(port.name).toBe("Dover");
+  });
+  it("can have a ship added", () => {
+    const port = new Port("Dover");
+    const ship = {};
+
+    port.addShip(ship);
+
+    expect(port.ships).toContain(ship);
   });
 });
