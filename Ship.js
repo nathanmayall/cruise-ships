@@ -1,7 +1,11 @@
 class Ship {
   constructor(port) {
-    this.startingPort = port;
+    this.currentPort = port || "Portsmouth";
     this.passengers = 0;
+    this.journey = [];
+  }
+  setSail(newPort) {
+    this.currentPort = newPort;
   }
 }
 
