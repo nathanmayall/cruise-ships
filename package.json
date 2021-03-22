@@ -1,0 +1,23 @@
+{
+  "name": "cruise-ships",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanmayall/cruise-ships.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanmayall/cruise-ships/issues"
+  },
+  "homepage": "https://github.com/nathanmayall/cruise-ships#readme",
+  "dependencies": {
+    "jest": "npm:undefined@^"
+  }
+}
